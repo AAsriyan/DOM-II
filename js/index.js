@@ -18,7 +18,6 @@ signUpBtn[2].addEventListener('mouseover', e => {
 // Changing the h1 while moving the mouse over and out of element
 
 const bigHeader = document.querySelector('.logo-heading');
-console.log(bigHeader);
 
 bigHeader.addEventListener('mouseenter', e => {
   bigHeader.textContent = 'SUPER FUN BUS ACTIVATED';
@@ -31,7 +30,6 @@ bigHeader.addEventListener('mouseout', e => {
 // Working on making the text green when I select the text
 
 const textTransform = document.querySelectorAll('p');
-console.log(textTransform);
 
 textTransform[0].addEventListener('mouseup', e => {
 	e.currentTarget.style.color = 'green';
@@ -134,21 +132,33 @@ const navBar = document.querySelectorAll('nav a');
 navBar[0].addEventListener('click', e => {
 	e.currentTarget.style.color = 'pink';
 	e.preventDefault();
+	e.stopPropagation();
 })
 
 navBar[1].addEventListener('click', e => {
 	e.currentTarget.style.color = 'pink';
 	e.preventDefault();
+	e.stopPropagation();
 })
 
 navBar[2].addEventListener('click', e => {
 	e.currentTarget.style.color = 'pink';
 	e.preventDefault();
+	e.stopPropagation();
 })
 
 navBar[3].addEventListener('click', e => {
 	e.currentTarget.style.color = 'pink';
 	e.preventDefault();
+	e.stopPropagation();
+})
+
+// Testing stop Propagation on the container
+
+const containerColor = document.querySelector('.container')
+
+containerColor.addEventListener('click', e => {
+	e.currentTarget.style.color = 'pink';
 })
 
 // Changing input text color when selecting
