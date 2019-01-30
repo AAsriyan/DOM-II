@@ -350,3 +350,13 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home form {
+  max-width: 25%;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.home form label {
+  margin: 20px 0px;
+  font-size: 20px;
+}

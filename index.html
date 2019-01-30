@@ -8,8 +8,10 @@
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="js/index.js" async></script>
+  
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -65,7 +67,7 @@
     <section class="content-pick">
 
       <div class="destination">
-        <h4>Fun In The Sun</h4>
+        <h4 id="first-h4">Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
@@ -79,6 +81,15 @@
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
+    </section>
+    <section class="form">
+      <form action="/action_page.php">
+        <label for="">First name:</label>
+        <input class="first-name" type="text" name="firstname" value="John">
+        <label for="">Last name:</label>
+        <input class="last-name" type="text" name="lastname" value="Smith">
+        <input class="form-submit" type="submit" value="Submit">
+      </form>
     </section>
   </div><!-- container -->
 
